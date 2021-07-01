@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 body {
     display: flex;
@@ -18,8 +19,8 @@ body {
 }
 textarea {
     padding: 10px;
-    min-width: 420px;
-    min-height: 300px;
+    min-width: 350px;
+    min-height: 250px;
     font-size: 16px;
 }
 button#htmlMinify {
@@ -34,4 +35,26 @@ button#htmlMinify {
     cursor: pointer;
     outline: 0;
     margin: 0 10px;
+}
+
+.mobile-message {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .codeminify {
+        display: none;
+    }
+    .mobile-message {
+        position: fixed;
+        display: grid;
+        gap: 20px;
+        place-content: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        padding: 30px;
+        background-color: #222;
+        color: #fff;
+    }
 }

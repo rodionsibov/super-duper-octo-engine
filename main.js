@@ -8,4 +8,7 @@ document.querySelector("#htmlMinify").addEventListener("click", function () {
     minifyHtml(
         this.innerHTML, document.querySelectorAll('textarea')[0], document.querySelectorAll('textarea')[1]
     );
+    document.querySelectorAll('textarea')[1].addEventListener("focus", function() {
+        this.select();
+        })
 }, false);
