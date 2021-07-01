@@ -23,7 +23,7 @@ textarea {
     min-height: 250px;
     font-size: 16px;
 }
-button#htmlMinify {
+#htmlMinify {
     display: block;
     width: 150px;
     height: 40px;
@@ -35,6 +35,10 @@ button#htmlMinify {
     cursor: pointer;
     outline: 0;
     margin: 0 10px;
+}
+
+#htmlMinify:hover {
+    opacity: 0.8;
 }
 
 .mobile-message {
