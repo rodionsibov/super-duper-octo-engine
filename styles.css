@@ -41,6 +41,23 @@ button#htmlMinify {
     display: none;
 }
 
+.info {
+    margin-top: 20px;
+    display: grid;
+    place-items: center;
+}
+
+#inputInfo,
+#outputInfo {
+    font-size: 2rem;
+    color: gray;
+}    
+
+svg {
+    width: 20px;
+    color: lightgray;
+}
+
 @media (max-width: 900px) {
     .codeminify {
         display: none;

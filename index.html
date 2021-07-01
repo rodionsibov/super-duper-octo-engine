@@ -12,7 +12,23 @@
 <body>
     <section class="codeminify">
         <textarea class="simplecode" placeholder="Paste or type your data here..."></textarea>
-        <button id="htmlMinify">Minify HTML</button>
+        <div>
+            <button id="htmlMinify">Minify HTML</button>
+            <div class="info">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                <p id="inputInfo">0</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                <p id="outputInfo">0</p>
+            </div>
+        </div>
         <textarea placeholder="Output" class="minifycode"></textarea>
     </section>
     <div class="mobile-message">

@@ -1,3 +1,6 @@
+const inputEl = document.querySelectorAll('textarea')[0]
+const outputEl = document.querySelectorAll('textarea')[1]
+
 function minifyHtml(type, input, output) {
     output.value = input.value
         .replace(/\<\!--\s*?[^\s?\[][\s\S]*?--\>/g, '')
@@ -5,10 +8,10 @@ function minifyHtml(type, input, output) {
 }
 
 document.querySelector("#htmlMinify").addEventListener("click", function () {
-    minifyHtml(
-        this.innerHTML, document.querySelectorAll('textarea')[0], document.querySelectorAll('textarea')[1]
-    );
-    document.querySelectorAll('textarea')[1].addEventListener("focus", function() {
+    minifyHtml(this.innerHTML, inputEl, outputEl);
+    document.querySelector("#inputInfo").textContent = inputEl.value.length
+    document.querySelector("#outputInfo").textContent = outputEl.value.length
+    outputEl.addEventListener("focus", function () {
         this.select();
-        })
+    })
 }, false);
