@@ -6,6 +6,6 @@ function minifyHtml(type, input, output) {
 
 document.querySelector("#htmlMinify").addEventListener("click", function () {
     minifyHtml(
-        this.innerHTML, document.querySelector('textarea')[0], document.querySelector('textarea')[1]
+        this.innerHTML, document.querySelectorAll('textarea')[0], document.querySelectorAll('textarea')[1]
     );
 }, false);
